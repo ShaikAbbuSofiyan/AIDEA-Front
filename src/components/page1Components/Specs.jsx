@@ -9,7 +9,7 @@ const Specs = () => {
         <div className='w-full max-h-[200px] px-20 py-10 bg-gray-800 flex justify-between'>
             <div className='max-w-[200px]'>
               <div className='flex gap-3 '>
-                <img className='object-cover' src = "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/course-duration-icon.png" alt="Img" loading='lazy' />
+                {/* <img className='object-cover' src = "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/nxtwave-intensive-2.0/course-duration-icon.png" alt="Img" loading='lazy' /> */}
                 <div>
                   <h4 className='font-sans tracking-tighter text-gray-400 text-semibold text-xl' >Course Duration</h4>
                   <p className='font-sans tracking-tighter not-italic  text-semibold text-white'>1 Year of your class</p>

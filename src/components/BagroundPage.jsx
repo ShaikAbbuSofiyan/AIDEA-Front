@@ -8,7 +8,7 @@ import Affiliates from './Affiliates'
 import Whyus from './Whyus'
 import Getcertified from './Getcertified'
 import FAQ from './FAQ'
-import NavBar from './page1Components/NavBar'
+// import NavBar from './page1Components/NavBar
 import { Link } from 'react-scroll';
 import { BsArrowRight } from "react-icons/bs";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
