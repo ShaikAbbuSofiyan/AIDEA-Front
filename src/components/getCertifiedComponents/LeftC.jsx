@@ -11,7 +11,7 @@ const LeftC = () => {
   return (
     <div>
       <div>
-        <div className='max-w-[400px] text-xl font-sans text-zinc-600' >
+        <div className='max-w-[400px] text-xl font-sans text-zinc-900' >
             <p >Yes, you’ll get a certificate representing your Expertise in AI Tools once you submit your projects and clear the test</p>
         </div>
         <div className='mt-5'>

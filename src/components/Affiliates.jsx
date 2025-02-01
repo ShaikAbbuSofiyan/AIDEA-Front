@@ -1,5 +1,5 @@
 import React from 'react'
-import Schs from '../assets/images/schools1.jpg'
+import Schs from '../assets/images/schs1.jpg';
 import BookDemo from './page1Components/BookDemo';
 import { IoRadioButtonOn } from "react-icons/io5";
 import { Link } from 'react-scroll';
@@ -10,7 +10,7 @@ const Affiliates = () => {
 
   return (
     <div>
-      <div className='bg-cyan-100 w-full h-auto'>
+      <div className='bg-cyan-100 w-full h-auto bg-inherit'>
         <div className=' py-20 flex justify-center'>
             <div className='max-w-[500px]  flex justify-center'>
                 <p className='text-5xl font-sans font-semibold text-center text-zinc-600'>2000+ CBSE Schools Collabrated with AIDEA</p>

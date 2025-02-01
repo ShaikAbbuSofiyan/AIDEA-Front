@@ -5,7 +5,7 @@ import Others from './whyUsComponents/Others'
 const Whyus = () => {
   return (
     <div>
-      <div className='bg-blue-100 h-screen px-20 py-20'>
+      <div className=' h-screen px-20 py-20 '>
         <div >
             <p className='font-sans font-semibold text-5xl'>Why Choose AIDEA?</p>
         </div>

@@ -6,28 +6,31 @@ import { IoRadioButtonOn } from "react-icons/io5";
 import BookDemo from './page1Components/BookDemo';
 import { Link } from 'react-scroll';
 import { Navigate } from 'react-router-dom';
+import HorizontalScrollWithButtons from './ReviewComponents/HorizontalScrollWithButtons';
+import CardScrolling from './ReviewComponents/CardScrolling';
 
 const Reviews = () => {
+    
     const scrollRef = useRef(null);
+    const scrollLeft = () => {
+        scrollRef.current.scrollBy({
+        right: -100, // Adjust scroll amount
+        behavior: 'smooth',
+        });
+    };
+    const scrollRight = () => {
+        scrollRef.current.scrollBy({
+          left: 100, // Adjust scroll amount
+          behavior: 'smooth',
+        });
+    };
     function rightScroll(){
         
 
-        const scrollLeft = () => {
-            scrollRef.current.scrollBy({
-            right: -100, // Adjust scroll amount
-            behavior: 'smooth',
-            });
-        };
-        const scrollRight = () => {
-            scrollRef.current.scrollBy({
-              left: 100, // Adjust scroll amount
-              behavior: 'smooth',
-            });
-        };
     }
   return (
     <div>
-      <div className='bg-zinc-400 w-full h-auto px-60 py-20'>
+      <div className='bg-white w-full h-auto px-60 py-20 '>
         <div className='w-full text-5xl font-sans  font-semibold flex justify-center mb-12'>
             Your Seniors Reviews
         </div>
@@ -49,25 +52,29 @@ const Reviews = () => {
             </div>
         </div>
         <div className=' overflow-x-auto w-full  scrollbar-none'>
-            <div className='flex space-x-10  '>
-                <div className='d1 flex space-x-10'>
-
-
+            <div ref={scrollRef}  className='flex space-x-10  '>
+                <div  className='d1 flex space-x-10'>
+                    <Card/>
+                    <Card/>
                     <Card/>
                     <Card/>
                     <Card/>
                 </div>
-                <div className='d2'><Card/></div>
-            </div>
-            <div className='mt-10 text-2xl  space-x-10 flex justify-center'>
-                <div>
-                    <button  onClick={rightScroll}><MdKeyboardArrowLeft  /></button>
-                </div>
-                <div>
-                    <button><MdChevronRight  /></button>
-                </div>
+                {/* <div className='d2'><Card/></div> */}
             </div>
         </div>
+        <div className='mt-10 text-2xl  space-x-10 flex justify-center'>
+            <div>
+                <button  onClick={()=>scrollLeft}><MdKeyboardArrowLeft  /></button>
+            </div>
+            <div>
+                <button onClick={()=>scrollRight}><MdChevronRight  /></button>
+            </div>
+        </div>
+        {/* <div>
+            {/* <CardScrolling/> */}
+            {/* <HorizontalScrollWithButtons/> */}
+        {/* </div> */}
         <div className=' flex justify-center'>
             <div>
                 <div className='flex gap-2 py-1 justify-center'>

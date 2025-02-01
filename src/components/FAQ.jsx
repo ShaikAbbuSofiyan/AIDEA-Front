@@ -6,8 +6,8 @@ import FAQPage from './faqComponents/FAQPage'
 const FAQ = () => {
   return (
     <div>
-      <div className='px-20 py-20 w-full h-screen bg-zinc-200'>
-        <div className='text-[48px] font-sans'>Frequently Asked Questions</div>
+      <div className='px-20 py-20 w-full h-screen bg-zinc-200 bg-gradient-to-br from-[#6a11cb] to-[#2575fc]'>
+        <div className='text-[48px] font-sans font-semibold'>Frequently Asked Questions</div>
         <div className='flex justify-between mt-10'>
             <div>
                 <LeftF/>

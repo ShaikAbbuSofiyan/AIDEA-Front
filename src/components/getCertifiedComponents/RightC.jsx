@@ -1,5 +1,5 @@
 import React from 'react'
-import C from './certificate.png'
+import C from '../../assets/images/certificate.png'
 const RightC = () => {
   return (
     <div>

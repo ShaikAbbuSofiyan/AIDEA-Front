@@ -24,7 +24,7 @@ const MovingArray = () => {
           {items.map((item, index) => (
             <li
               key={index}
-              className="text-3xl font-sans w-full flex-shrink-0   text-red-500 py-2 px-4 rounded-md outline-none"
+              className="text-3xl font-sans w-full flex-shrink-0   text-yellow-300 py-2 px-4 rounded-md outline-none"
             >
               {item}
             </li>

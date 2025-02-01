@@ -18,11 +18,11 @@ import { IoArrowUp } from "react-icons/io5";
 
 const BagroundPage = () => {
   return (
-    <div className='w-full h-screen bg-blue-200'>
+    <div className='w-full h-screen bg-gradient-to-br from-[#6a11cb] to-[#2575fc]'>
       <div>
-        <nav className="bg-blue-400 p-4">
+        <nav className="  w-full bg-zinc-900 p-5 items-center">
           <div className="container mx-auto flex justify-between items-center">
-            <div className="text-white text-3xl font-bold">AIDEA</div>
+            <div className="text-white text-3xl font-bold px-7">AIDEA</div>
               <div className="flex space-x-4">
                 <Link
                     to="home"
@@ -38,7 +38,7 @@ const BagroundPage = () => {
                     duration={500}
                     className="text-white tracking-tighter text-xl hover:text-gray-300 cursor-pointer"
                 >
-                    Carriculum
+                    Curriculum
                 </Link>
                 <Link
                     to="reviews"
@@ -62,7 +62,7 @@ const BagroundPage = () => {
                     duration={500}
                     className="text-white tracking-tighter text-xl hover:text-gray-300 cursor-pointer"
                 >
-                  <div className='flex gap-1 text-slate-600 font-sans'>Login <div className='py-1.5' ><BsArrowRight /></div></div>
+                  <div className='h-[50px] px-5 w-auto border bg-blue-200 rounded-s-lg rounded-e-lg  max-h-8 flex gap-1 text-slate-900 font-sans  align-text-middle hover:bg-cyan-400 hover:text-white hover:font-semibold'>Login </div>
                 </Link>
                 
               </div>
@@ -83,9 +83,9 @@ const BagroundPage = () => {
             duration={500}
             className=" text-blue-900  tracking-tighter  hover:text-gray-300 cursor-pointer"
           >
-            <div className='px-2 mb-4'>
+            <div className='flex justify-center py-2 mb-4'>
               {/* <IoArrowUpCircleOutline className='text-3xl'/> */}
-              <IoArrowUp className='text-2xl'/>
+              <IoArrowUp className='text-3xl'/>
             </div>
           </Link>
         </div>
