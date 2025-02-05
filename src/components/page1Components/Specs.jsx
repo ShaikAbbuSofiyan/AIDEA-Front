@@ -1,6 +1,5 @@
 import React from 'react';
 // import myimage from 'AIDEA/src/components/Timer.jpg';
-import Timer from '../Timer.jpeg'
 
 const Specs = () => {
   // const myimage = require('AIDEA/src/components/Timer.jpeg');

@@ -1,9 +1,10 @@
 import React from 'react'
-import StudentImg from '../Timer.jpeg';
+import StudentImg from "../../assets/images/i1.jpg";
+import '../Background.css'
 const Card = () => {
   return (
     <div>
-      <div className='px-5 py-5 w-[300px] h-[300px] border-2 mt-12  rounded-[30px] bg-[#f7f7f7] shadow-sm hover:h-[320px] hover:w-[320px] hover:shadow-lg hover:bg-zinc-700 hover:text-white cursor-pointer'>
+      <div className='block px-5 py-5 w-[300px] h-[300px] border-2 mt-12  rounded-[30px] bg-[#f7f7f7] shadow-sm hover:h-[320px] hover:w-[320px] hover:shadow-lg hover:bg-zinc-700 hover:text-white cursor-pointer '>
         <div className='flex space-x-20'>
             <div>
                 <h1 className='font-semibold text-[18px] font-sans text-zinc-700 hover:text-white'>Sofiyan</h1>

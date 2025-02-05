@@ -13,13 +13,13 @@ import { Link } from 'react-scroll';
 import { BsArrowRight } from "react-icons/bs";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 import { IoArrowUp } from "react-icons/io5";
-
+import './Background.css'
 
 
 const BagroundPage = () => {
   return (
-    <div className='w-full h-screen bg-gradient-to-br from-[#6a11cb] to-[#2575fc]'>
-      <div>
+    <div className='w-full h-screen bg-gradient-to-br from-[#6a11cb] to-[#2575fc] '>
+      <div className=''>
         <nav className="  w-full bg-zinc-900 p-5 items-center">
           <div className="container mx-auto flex justify-between items-center">
             <div className="text-white text-3xl font-bold px-7">AIDEA</div>
@@ -69,7 +69,7 @@ const BagroundPage = () => {
           </div>
         </nav>
       </div>
-      <div id='home'>
+      <div id='home' className=''>
         <Page1/>
       </div>
       <div className='flex w-full  justify-between fixed h-[500px] opacity-90'>
@@ -90,7 +90,7 @@ const BagroundPage = () => {
           </Link>
         </div>
       </div>
-      <Specs/>
+      <Specs className = ""/>
       <Mentors/>
       <div id='reviews'><Reviews/></div>
       <div id='carriculum'>
